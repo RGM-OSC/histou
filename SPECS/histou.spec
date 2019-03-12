@@ -28,8 +28,11 @@ Adds templates to Grafana in combination with nagflux
 %install
 install -d -m0755 %{buildroot}%{rgmdatadir}
 install -d -m0755 %{buildroot}%{_sysconfdir}/httpd/conf.d/
+install -d -m0755 /usr/share/grafana/public/dashboards/
+
 cp -afv ./* %{buildroot}%{rgmdatadir}
 cp %{SOURCE1} %{buildroot}%{_sysconfdir}/httpd/conf.d/
+cd histou.js /usr/share/grafana/public/dashboards/
 
 
 %post
