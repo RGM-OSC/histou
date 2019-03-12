@@ -32,7 +32,7 @@ install -d -m0755 /usr/share/grafana/public/dashboards/
 
 cp -afv ./* %{buildroot}%{rgmdatadir}
 cp %{SOURCE1} %{buildroot}%{_sysconfdir}/httpd/conf.d/
-cd histou.js /usr/share/grafana/public/dashboards/
+cp histou.js /usr/share/grafana/public/dashboards/
 
 
 %post
