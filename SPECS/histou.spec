@@ -15,7 +15,7 @@ Source1: histou.conf
 # appliance group and users
 # /srv/rgm/rgmweb-1.0
 %define	rgmdatadir	%{rgm_path}/%{name}-%{version}
-%define rgmlinkdir      %{rgm_path}/%{name}
+%define rgmlinkdir  %{rgm_path}/%{name}
 
 %description
 Adds templates to Grafana in combination with nagflux
@@ -40,8 +40,6 @@ rm -rf %{buildroot}
 
 %files
 %{rgmdatadir}
-%{rgmlibdir}
-%{rgmdocdir}
 %{_sysconfdir}/httpd/conf.d/
 
 %changelog
