@@ -27,6 +27,7 @@ Adds templates to Grafana in combination with nagflux
 
 %install
 install -d -m0755 %{buildroot}%{rgmdatadir}
+install -d -m0755 %{buildroot}%{_sysconfdir}/httpd/conf.d/
 cp -afv ./* %{buildroot}%{rgmdatadir}
 cp %{SOURCE1} %{buildroot}%{_sysconfdir}/httpd/conf.d/
 
