@@ -1,7 +1,7 @@
 Summary: Histou 
 Name: histou
 Version: 0.4.3
-Release: 1.rgm
+Release: 2.rgm
 Source: %{name}-%{version}.tar.gz
 Group: Applications/System
 License: GPL
@@ -46,6 +46,8 @@ rm -rf %{buildroot}
 %{_sysconfdir}/httpd/conf.d/
 
 %changelog
+* Tue Mar 27 2019 Michael Aubertin <maubertin@fr.scc.com> - 0.4.3-2.rgm
+- Fix URL issue
 * Tue Mar 12 2019 Michael Aubertin <maubertin@fr.scc.com> - 0.4.3-1.rgm
 - Initial release
 
