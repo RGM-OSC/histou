@@ -1,7 +1,7 @@
 Summary: Histou 
 Name: histou
 Version: 0.4.3
-Release: 2.rgm
+Release: 3.rgm
 Source: %{name}-%{version}.tar.gz
 Group: Applications/System
 License: GPL
@@ -43,9 +43,11 @@ rm -rf %{buildroot}
 
 %files
 %{rgmdatadir}
-%{_sysconfdir}/httpd/conf.d/
+%config %{_sysconfdir}/httpd/conf.d/
 
 %changelog
+* Tue Jun 3 2020 Michael Aubertin <maubertin@fr.scc.com> - 0.4.3-3.rgm
+- Fix Apache config
 * Tue Mar 27 2019 Michael Aubertin <maubertin@fr.scc.com> - 0.4.3-2.rgm
 - Fix URL issue
 * Tue Mar 12 2019 Michael Aubertin <maubertin@fr.scc.com> - 0.4.3-1.rgm
