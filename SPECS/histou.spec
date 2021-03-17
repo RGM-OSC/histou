@@ -2,7 +2,7 @@ Summary: Histou
 Name: histou
 Version: 0.4.3
 Release: 3.rgm
-Source: %{name}-%{version}.tar.gz
+Source: %{name}.tar.gz
 Group: Applications/System
 License: GPL
 Requires: influxdb, grafana
@@ -21,7 +21,7 @@ Source1: histou.conf
 Adds templates to Grafana in combination with nagflux
 
 %prep
-%setup -q
+%setup -q -n %{name}
 
 %build
 
