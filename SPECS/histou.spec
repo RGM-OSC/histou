@@ -1,7 +1,7 @@
-Summary: Histou 
+Summary: Histou
 Name: histou
 Version: 0.4.3
-Release: 4.rgm
+Release: 5.rgm
 Source: %{name}.tar.gz
 Group: Applications/System
 License: GPL
@@ -42,6 +42,9 @@ rm -rf %{buildroot}
 %{rgmdatadir}
 
 %changelog
+* Wed Jun 14 2023 Eric Belhomme <ebelhomme@fr.scc.com> - 0.4.3-5.rgm
+- Fix binary absolute path
+
 * Wed Mar 17 2021 Eric Belhomme <ebelhomme@fr.scc.com> - 0.4.3-4.rgm
 - remove Apache config
 
