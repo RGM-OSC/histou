@@ -33,7 +33,7 @@ class MyPHPUnitFrameworkTestCase extends \PHPUnit_Framework_TestCase
             if (PHP_OS === 'Windows' || PHP_OS === 'WINNT') {
                 exec("rd /s /q {$path}");
             } else {
-                exec("rm -rf {$path}");
+                exec("/usr/bin/rm -rf {$path}");
             }
         }
         $this->delCache();
