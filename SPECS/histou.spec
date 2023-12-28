@@ -1,7 +1,7 @@
 Summary: Histou
 Name: histou
 Version: 0.4.3
-Release: 5.rgm
+Release: 6.rgm
 Source: %{name}.tar.gz
 Group: Applications/System
 License: GPL
@@ -42,6 +42,9 @@ rm -rf %{buildroot}
 %{rgmdatadir}
 
 %changelog
+* Thu Dec 28 2023 Vincent Fricou <vfricou@fr.scc.com> - 0.4.3-6.rgm
+- Fix autoloader for php 8 compatibility
+
 * Wed Jun 14 2023 Eric Belhomme <ebelhomme@fr.scc.com> - 0.4.3-5.rgm
 - Fix binary absolute path
 

@@ -14,10 +14,10 @@ function getPath()
     return substr(realpath(dirname(__FILE__)), 0, -6);
 }
 
-function __autoload($className)
+spl_autoload_register( function( $className )
 {
     $file = strtolower(str_replace('\\', DIRECTORY_SEPARATOR, $className)).'.php';
     if (file_exists($file)) {
         require_once $file;
     }
-}
+});
